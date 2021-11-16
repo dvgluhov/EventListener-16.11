@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events</title>
+    <style>
+        div{
+            background-color: navy;
+            height: 50px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body id = "myBody">
+    <div></div>
+<p id ="out"></p>
+    <script>
+        // 1способ
+        // myBody.onclick = function(e)  {
+        //     out.innerText+ "Click detected over " + e.target.nodeName;
+            
+        // };
+        // 2 способ
+         myBody.addEventListener ("click", function(e)  {
+            out.innerText = "Click detected over " + e.target.nodeName;
+            
+        });
+    </script>
+</body>
+</html>
